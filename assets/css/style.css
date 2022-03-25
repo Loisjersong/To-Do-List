@@ -1,0 +1,67 @@
+@font-face {
+    font-Family: 'Abril Fatface';
+    font-Size: 48px;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-Family: 'Poppins';
+    font-Size: 14px;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+body {
+    background-color: #B5EAD7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    Font-Family: 'Abril Fatface';
+}
+
+p {
+    font-Family: 'Poppins';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+    text-align: center;
+}
+
+.col-8 {
+    border-radius: 20px;
+    background-color: white;
+    height: 50vh;
+}
+
+input {
+    font-family: 'Poppins';
+    width: 70%;
+    border: 2px #ffbe88 solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+input:active {
+    outline-color: #ffbe88;
+}
+
+input:focus {
+    outline-color: #ffbe88;
+    outline-width: 2px;
+    outline-style: none;
+}
+
+button {
+    font-family: 'Poppins';
+    width: 20%;
+    border: none;
+    background-color: #ffbe88;
+    border: 2px #ffbe88 solid;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
