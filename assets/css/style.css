@@ -1,4 +1,3 @@
-import 'assets/remixicon/remixicon.css'
 @font-face {
     font-Family: 'Abril Fatface';
     font-Size: 48px;
@@ -29,22 +28,28 @@ p {
 }
 
 .row {
-    /* height: 100%; */
     text-align: center;
 }
 
 .col-8 {
     border-radius: 20px;
     background-color: white;
-    /* height: 90vh; */
 }
 
-input {
+#new-task-input {
     font-family: 'Poppins';
     width: 70%;
     border: 2px #ffbe88 solid;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.text {
+    font-family: 'Poppins';
+    border: 2px #ffbe88 solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 80%;
 }
 
 input:active {
@@ -68,9 +73,18 @@ input:focus {
 }
 
 #tasks .task {
-	display: flex;
-	justify-content: space-between;
+    width: 92%;
     padding: 3px;
+    margin: 0 auto;
+
+}
+
+input.text {
+    width: 100%;
+}
+
+.task {
+    display: flex;
 }
 
 .task .content {
@@ -78,36 +92,24 @@ input:focus {
 }
 
 .task .content .text {
-	color: var(--light);
 	font-size: 1.125rem;
-	width: 100%;
-	display: block;
-	transition: 0.4s;
-}
-
-
-.task .actions {
-	display: flex;
 }
 
 .task .actions button {
     font-family: 'Poppins';
 	cursor: pointer;
-	font-size: 1rem;
-	transition: 0.4s;
-    width: 14vmin;
+	font-size: 1.125rem;
 }
 
 .task .actions .delete {
 	color: crimson;
 }
 
-
 .edit {
     font-family: 'Poppins';
     border: none;
     background-color: #ffbe88;
-    border: 2px #ffbe88 solid; 
+    border: 2px #ffbe88 solid;
 }
 
 .delete {

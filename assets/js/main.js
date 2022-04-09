@@ -50,13 +50,11 @@ window.addEventListener('load', () => {
 		// edit/save function
 		task_edit_el.addEventListener('click', (e) => {
 			if (task_edit_el.classList.contains('ri-edit-line')) {
-				// task_edit_el.innerText = "Save";
 				task_edit_el.classList.remove("ri-edit-line");
 				task_edit_el.classList.add("ri-check-line");
 				task_input_el.removeAttribute("readonly");
 				task_input_el.focus();
 			} else {
-				// task_edit_el.innerText = "Edit";
 				task_edit_el.classList.remove("ri-check-line");
 				task_edit_el.classList.add("ri-edit-line");
 				task_input_el.setAttribute("readonly", "readonly");
