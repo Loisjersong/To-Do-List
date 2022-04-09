@@ -27,13 +27,16 @@ window.addEventListener('load', () => {
 		const task_actions_el = document.createElement('div');
 		task_actions_el.classList.add('actions');
 		
+		// edit button 
 		const task_edit_el = document.createElement('button');
 		task_edit_el.classList.add('edit');
-		task_edit_el.innerText = 'Edit';
+		task_edit_el.classList.add("ri-edit-line"); //edit icon
 
+		// delete button
 		const task_delete_el = document.createElement('button');
 		task_delete_el.classList.add('delete');
-		task_delete_el.innerText = 'Delete';
+		task_delete_el.classList.add('ri-delete-bin-line'); //delete icon
+		
 
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
@@ -44,21 +47,28 @@ window.addEventListener('load', () => {
 
 		input.value = '';
 
+		// edit/save function
 		task_edit_el.addEventListener('click', (e) => {
-			if (task_edit_el.innerText.toLowerCase() == "edit") {
-				task_edit_el.innerText = "Save";
+			if (task_edit_el.classList.contains('ri-edit-line')) {
+				// task_edit_el.innerText = "Save";
+				task_edit_el.classList.remove("ri-edit-line");
+				task_edit_el.classList.add("ri-check-line");
 				task_input_el.removeAttribute("readonly");
 				task_input_el.focus();
 			} else {
-				task_edit_el.innerText = "Edit";
+				// task_edit_el.innerText = "Edit";
+				task_edit_el.classList.remove("ri-check-line");
+				task_edit_el.classList.add("ri-edit-line");
 				task_input_el.setAttribute("readonly", "readonly");
 			}
 		});
 
+		// delete function
 		task_delete_el.addEventListener('click', (e) => {
 			list_el.removeChild(task_el);
 		});
 
+		// border radius
         document.querySelector('#colll').style.borderBottomRightRadius = "0";
         document.querySelector('#colll').style.borderBottomLeftRadius = "0";
 	});

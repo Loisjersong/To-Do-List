@@ -1,3 +1,4 @@
+import 'assets/remixicon/remixicon.css'
 @font-face {
     font-Family: 'Abril Fatface';
     font-Size: 48px;
@@ -123,3 +124,4 @@ input:focus {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
